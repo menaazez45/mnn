@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>تسجيل الدخول</title>
+  
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      h1 {
+        text-align: center;
+      }
+      
+      .form-group {
+        margin-bottom: 15px;
+      }
+      
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+      
+</style>
+<body>
+
+<div class="container">
+  <h1>تسجيل الدخول</h1>
+  <form action="/login" method="POST">
+    <div class="form-group">
+      <label for="usernameOrEmail">اسم المستخدم أو البريد الإلكتروني:</label>
+      <input type="text" id="usernameOrEmail" name="usernameOrEmail" required>
+    </div>
+
+    <div class="form-group">
+      <label for="password">كلمة المرور:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+
+    <input type="submit" value="تسجيل الدخول">
+  </form>
+</div>
+
+</body>
+</html>
